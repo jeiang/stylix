@@ -13,7 +13,7 @@
           picture-options = "zoom";
           picture-uri = "file://${config.stylix.image}";
         };
-      }];
+      }]
     else
       lib.mkIf config.stylix.targets.gnome.enable [{
         dconf.settings."org/gnome/desktop/background" = {
