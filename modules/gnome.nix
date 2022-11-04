@@ -5,7 +5,7 @@
     config.lib.stylix.mkEnableTarget "GNOME" true;
 
   config.home-manager.sharedModules =
-    if config.stylix.polarity == dark
+    if config.stylix.polarity == "dark"
     then 
       lib.mkIf config.stylix.targets.gnome.enable [{
         dconf.settings."org/gnome/desktop/background" = {
